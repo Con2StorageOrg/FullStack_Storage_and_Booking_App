@@ -173,7 +173,7 @@ export class LogsService {
     level?: "error" | "warning" | "info" | "debug";
     message: string;
     source?: string;
-    metadata?: Record<string, any>;
+    metadata?: Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
   }) {
     try {
       // Log to NestJS logger
