@@ -4,7 +4,7 @@ export function logInfo(
   logsService: LogsService,
   message: string,
   source: string,
-  metadata?: Record<string, any>,
+  metadata?: Record<string, any>, // eslint-disable-line @typescript-eslint/no-explicit-any
 ) {
   logsService.createLog({
     level: "info",
@@ -18,7 +18,7 @@ export function logWarning(
   logsService: LogsService,
   message: string,
   source: string,
-  metadata?: Record<string, any>,
+  metadata?: Record<string, any>, // eslint-disable-line @typescript-eslint/no-explicit-any
 ) {
   logsService.createLog({
     level: "warning",
@@ -33,7 +33,7 @@ export function logError(
   message: string,
   source: string,
   error?: Error,
-  metadata?: Record<string, any>,
+  metadata?: Record<string, any>, // eslint-disable-line @typescript-eslint/no-explicit-any
 ) {
   logsService.createLog({
     level: "error",
