@@ -19,6 +19,6 @@
     "noFallthroughCasesInSwitch": false,
     "jsx": "react",
   },
-  "include": ["src/**/*", "config.mts", ],
+  "include": ["src/**/*", "config.mts", "test/**/*"],
   "exclude": ["../frontend", "node_modules", "dist"]
 }

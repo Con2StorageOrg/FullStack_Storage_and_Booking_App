@@ -4,13 +4,13 @@ import {
   dayDiffFromToday,
   getUniqueLocationIDs,
 } from "../../src/utils/booking.utils";
-import { UserBookingOrder } from "src/modules/booking/types/booking.interface";
+import { UserBooking } from "src/modules/booking/types/booking.interface";
 
 describe("getUniqueLocationIDs", () => {
   it("removes duplicate from the same order_items array", () => {
-    const testValueA: UserBookingOrder[] = [
+    const testValueA: UserBooking[] = [
       {
-        order_items: [
+        booking_items: [
           {
             storage_items: {
               location_id: "helsinki",
@@ -36,9 +36,9 @@ describe("getUniqueLocationIDs", () => {
     ]);
   });
   it("removes duplicate from different orders", () => {
-    const testValueA: UserBookingOrder[] = [
+    const testValueA: UserBooking[] = [
       {
-        order_items: [
+        booking_items: [
           {
             storage_items: {
               location_id: "helsinki",
@@ -47,7 +47,7 @@ describe("getUniqueLocationIDs", () => {
         ],
       },
       {
-        order_items: [
+        booking_items: [
           {
             storage_items: {
               location_id: "stockholm",
@@ -56,7 +56,7 @@ describe("getUniqueLocationIDs", () => {
         ],
       },
       {
-        order_items: [
+        booking_items: [
           {
             storage_items: {
               location_id: "stockholm",
