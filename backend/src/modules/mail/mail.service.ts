@@ -17,7 +17,6 @@ import BookingRejectionEmail from "./../../emails/BookingRejectionEmail";
 import BookingDeleteMail from "./../../emails/BookingDeleteMail";
 import ItemsReturnedMail from "./../../emails/ItemsReturned";
 import ItemsPickedUpMail from "./../../emails/ItemsPickedUp";
-import { ExceptionsHandler } from "@nestjs/core/exceptions/exceptions-handler";
 
 /**
  * Options accepted by {@link MailService.sendMail}.
